@@ -16,7 +16,7 @@ def generate():
     try:
         # Call FastAPI backend
         response = requests.post(
-            "https://interactiveaistoryteller.onrender.com//generate-story/",
+            "https://interactiveaistoryteller.onrender.com/generate-story/",
             json={"user_input": user_input, "story_context": story_context}
         )
         response_data = response.json()
