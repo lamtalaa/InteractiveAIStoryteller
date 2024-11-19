@@ -9,8 +9,8 @@ def home():
     return render_template('index.html')
 
 # Route to send data to the FastAPI backend
-@app.route('/generate', methods=['POST'])
-def generate():
+@app.route('/generate-story', methods=['POST'])
+def generate_story():
     user_input = request.form['user_input']
     story_context = request.form['story_context']
     try:
