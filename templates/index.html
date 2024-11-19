@@ -203,7 +203,7 @@
 
             // Proceed with form submission if validation passes
             const formData = new FormData(e.target);
-            const response = await fetch('/generate', {
+            const response = await fetch('/generate-story', {
                 method: 'POST',
                 body: formData
             });
