@@ -18,7 +18,7 @@ def generate_story():
         response = requests.post(
             "https://www.yassineai.com/generate-story/",
             json={"user_input": user_input, "story_context": story_context},
-            timeout=20
+            timeout=30
         )
         response_data = response.json()
         return jsonify({"story": response_data.get('story', "Failed to get story.")})
